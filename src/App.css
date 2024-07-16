@@ -1,14 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
-* {
+body {
   overflow-x: hidden;
   font-family: "Lato", sans-serif;
-  /* background-color: #070029; */
+  background-color: #070029;
+}
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
 }
 
 h2 {
   font-family: "Jua", sans-serif;
-  font-size: 3rem;
+  font-size: 5rem;
   color: white;
 }
 
@@ -27,6 +30,8 @@ button {
   box-sizing: border-box;
   width: 100%;
   position: fixed;
+  z-index: 2;
+  top: 0;
 }
 
 .navbar img {
@@ -64,6 +69,7 @@ button {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  transition: ease-in-out .5s;
 }
 
 .socialDropdown {
@@ -89,9 +95,49 @@ button {
 
 
 
+/* ////////////// TOP CONTAINER ////////////// */
+.topContainer {
+  border-radius: 2rem;
+  margin: 7rem 1.5rem ;
+}
 
+.topContainer video {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 2rem;
+  height: auto;
+}
 
+/* ////////////// ABOUT ////////////// */
+.about {
+  padding: 0 3rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 5rem;
+}
 
+.aboutImg {
+  background-color: #FFAAFD;
+  border-radius: 2rem;
+}
+
+.aboutImg img {
+  margin-bottom: -2rem;
+}
+
+.about h4 {
+  color: #FFDA17;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.about p {
+  color: white;
+  font-size: 1rem;
+  margin-top: 2rem;
+  line-height: 2rem;
+  word-spacing: 0.5rem;
+}
 
 
 
