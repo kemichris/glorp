@@ -1,5 +1,4 @@
 import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import TokenomicsImg from "../assets/glorp3-copy.png"
 
 
@@ -28,7 +27,7 @@ export const Tokenomics = () => {
                 <div className="contractAddress">
                     <p>Token Address</p>
                     <p onClick={copyAddress}>........</p>
-                    <FontAwesomeIcon icon="fa-solid fa-copy" />
+                    <i class="fa-solid fa-copy"></i>
                 </div>
             </div>
         </div>

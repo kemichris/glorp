@@ -1,5 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
+* {
+  overflow-x: hidden;
+  font-family: "Lato", sans-serif;
+  /* background-color: #070029; */
+}
 
+h2 {
+  font-family: "Jua", sans-serif;
+  font-size: 3rem;
+  color: white;
+}
+
+button {
+  font-family: "Lato", sans-serif;
+  cursor: pointer;
+}
+
+/* ////////////// NAVBAR ////////////// */
+.navbar nav {
+  display: flex;
+  padding: 1rem 2rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #070029;
+  box-sizing: border-box;
+  width: 100%;
+  position: fixed;
+}
+
+.navbar img {
+  width: 4rem;
+  height: 3rem;
+}
+
+.navLinks {
+  display: flex;
+  gap: 2rem;
+}
+
+.link {
+  text-decoration: none;
+  font-size: 0.94rem;
+  color: white;
+  font-weight: bold;
+  padding: 0.375rem 1rem;
+  transition: ease-in-out .5s;
+}
+
+.link:hover {
+  background-color: white;
+  border-radius: 3.125rem;
+  
+  color: #070029;
+}
+
+.socialsBtn {
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
 
 
 
