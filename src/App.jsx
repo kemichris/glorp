@@ -2,6 +2,7 @@
 import './App.css';
 import { About } from './components/About';
 import { Navbar } from './components/Navbar';
+import { Roadmap } from './components/Roadmap';
 import { Tokenomics } from './components/Tokenomics';
 import { Topcontainer } from './components/Topcontainer';
 
@@ -15,6 +16,7 @@ function App() {
         <Topcontainer />
         <About />
         <Tokenomics/>
+        <Roadmap/>
       </main>
 
     </div>
