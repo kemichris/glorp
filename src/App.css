@@ -98,7 +98,7 @@ button {
 /* ////////////// TOP CONTAINER ////////////// */
 .topContainer {
   border-radius: 2rem;
-  margin: 7rem 1.5rem ;
+  margin: 7rem 1.5rem 2rem;
 }
 
 .topContainer video {
@@ -106,6 +106,25 @@ button {
   max-width: 100%;
   border-radius: 2rem;
   height: auto;
+}
+
+/* ////////////// MARQUEE ////////////// */
+.marquee {
+  margin-bottom: 7rem;
+}
+
+.marqueeContent {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 3rem;
+  padding: 1rem;
+  margin-right: 2rem;
+}
+
+.marqueeContent p {
+  font-size: 1.5rem;
+  font-family: "Jua", sans-serif;
 }
 
 /* ////////////// ABOUT ////////////// */

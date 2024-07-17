@@ -1,6 +1,7 @@
 
 import './App.css';
 import { About } from './components/About';
+import { MarqueeBox } from './components/MarqueeBox';
 import { Navbar } from './components/Navbar';
 import { Roadmap } from './components/Roadmap';
 import { Tokenomics } from './components/Tokenomics';
@@ -14,6 +15,7 @@ function App() {
       </header>
       <main>
         <Topcontainer />
+        <MarqueeBox/>
         <About />
         <Tokenomics/>
         <Roadmap/>
