@@ -5,8 +5,8 @@ import TokenomicsImg from "../assets/glorp3-copy.png"
 export const Tokenomics = () => {
 
     const copyAddress = ()=>{
-        navigator.clipboard.writeText("Contract address")
-        // enqueueSnackbar("Address copied", {variant: "success"});
+        navigator.clipboard.writeText("akfjklasjflkasjkdfasdjkfjsakfjdlksdjfklds")
+        alert("address copied")
     }
 
   return (

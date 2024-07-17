@@ -8,7 +8,7 @@ export const Roadmap = () => {
         <img src={RoadmapImg} alt="" />
         <div className="roadmapDetails">
             <h2>Roadmap</h2>
-            <p>we're just gonna keep riding with Glorp</p>
+            <p>we're just gonna keep riding with Glorp... More updates on Glorp coming soon</p>
         </div>
     </div>
   )
