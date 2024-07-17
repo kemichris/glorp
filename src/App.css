@@ -160,6 +160,97 @@ button {
 
 
 
+/* ////////////// TOKENOMICS ////////////// */
+.tokenomics {
+  margin: 7rem 1.5rem;
+}
+
+.tokenomics h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.tokenomicsDetails {
+  background-color: #CCE1FE;
+  border-radius: 2rem;
+  padding: 2rem 1rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 3rem;
+}
+
+.tokenomicsDetails img {
+  margin-top: -12rem;
+}
+
+.tokenomicsText {
+  width: 100%;
+}
+
+.ticker {
+  padding: 0.5rem 1rem ;
+  border-radius: 3rem;
+  background-color: #FF41C1;
+  color: white;
+  width: fit-content;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.tokenSupply {
+  color: #FF41C1;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.tokenSupplyFigure {
+  font-family: "Jua", sans-serif;
+  color: #FF41C1;
+  font-size: 5.5rem;
+}
+
+
+.tokenomicsText ul li {
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+.contractAddress {
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+}
+
+.caText {
+  font-family: "Jua", sans-serif;
+  font-size: 1.5rem;
+}
+
+.ca {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
