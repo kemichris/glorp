@@ -17,6 +17,8 @@ export const Footer = () => {
 
             <div className="contact">
               <p>hello@glorp.xyz</p>
+              
+              <p>Contract Address: akfjklasjflkasjkdfasdjkfjsakfjdlksdjfklds <i class="fa-solid fa-copy"></i></p>  
             </div>
          
         </div>

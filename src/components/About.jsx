@@ -3,7 +3,7 @@ import AboutImage from "../assets/glorp1-copy.png"
 
 export const About = () => {
   return (
-    <div className='about'>
+    <div className='about' id='about'>
       <div className="aboutImg">
         <img src={AboutImage} alt="" />
       </div>

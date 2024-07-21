@@ -17,9 +17,9 @@ export const Navbar = () => {
         <img src={Logo} alt="" />
         <div className="navLinks">
           <Link className='link' to="/">Home</Link>
-          <Link className='link' to="/about">About</Link>
-          <Link className='link' to="/tokenomics">Tokenomics</Link>
-          <Link className='link' to="/buy">How to buy</Link>
+          <a href="#about">About</a>
+          <a href="#tokenomics">Tokenomics</a>
+          <a href="#buy">How to buy</a>
         </div>
         <button className='socialsBtn' onClick={toggleDropdown}>Socials <i class="fa-solid fa-caret-down"></i></button>
         {isOpen && (

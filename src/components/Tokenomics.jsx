@@ -10,7 +10,7 @@ export const Tokenomics = () => {
     }
 
   return (
-    <div className='tokenomics'>
+    <div className='tokenomics' id='tokenomics'>
         <h2>Tokenomics</h2>
         <div className="tokenomicsDetails">
             <img src={TokenomicsImg} alt="" />

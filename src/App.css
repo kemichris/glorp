@@ -44,7 +44,7 @@ button {
   gap: 2rem;
 }
 
-.link {
+.link, .navLinks a {
   text-decoration: none;
   font-size: 0.94rem;
   color: white;
@@ -53,7 +53,7 @@ button {
   transition: ease-in-out .5s;
 }
 
-.link:hover, .socialsBtn:hover {
+.link:hover, .navLinks a:hover, .socialsBtn:hover {
   background-color: white;
   border-radius: 3.125rem;
   color: #070029;
@@ -298,7 +298,11 @@ footer p {
   font-size: 1.2rem;
 }
 
-
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
 
 
 /* @media (prefers-reduced-motion: no-preference) {
