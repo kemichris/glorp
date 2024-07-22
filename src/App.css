@@ -20,6 +20,9 @@ button {
   cursor: pointer;
 }
 
+/* ////////////// LOADING ////////////// */
+
+
 /* ////////////// NAVBAR ////////////// */
 .navbar nav {
   display: flex;
