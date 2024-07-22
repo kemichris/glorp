@@ -455,6 +455,11 @@ footer p {
     padding: 0 1.5rem;
   }
 
+  .about img {
+    width: 20rem;
+    height: 20rem;
+  }
+
   /* ////////////// TOKENOMICS ////////////// */
   .tokenSupplyFigure {
     font-size: 2rem;
