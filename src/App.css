@@ -438,6 +438,7 @@ footer p {
     left: 0;
   }
 
+  /* ////////////// TOKENOMICS ////////////// */
   .tokenSupplyFigure {
     font-size: 3rem;
   }
@@ -449,7 +450,40 @@ footer p {
     font-size: 1rem; 
   }
 
+  /* ////////////// ABOUT ////////////// */
+  .about {
+    padding: 0 1.5rem;
+  }
+
+  /* ////////////// TOKENOMICS ////////////// */
+  .tokenSupplyFigure {
+    font-size: 2rem;
+  }
+
+  .tokenomics ul li {
+    font-size: 1rem;
+  }
   
+  .contractAddress {
+    padding: 0.5rem 1rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+
+  .caText {
+    font-size: 1rem;
+  }
+
+  .ca {
+    font-size: 0.8rem;
+  }
+
+  /* ////////////// ROADMAP ////////////// */
+  .roadmap p {
+    font-size: 1rem;
+  }
 }
 
 
