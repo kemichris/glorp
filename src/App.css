@@ -93,7 +93,63 @@ button {
   align-items: center;
 }
 
+.navBtn {
+  color: #CCE1FE;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
 
+.mobileMenu {
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 3rem 1rem 0;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  left: -15rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, .3);
+  transition: left 0.5s ease-in-out;
+}
+
+.mobileMenu a {
+  padding: 0 2rem;
+  text-decoration: none;
+  font-family: "Jua", sans-serif;
+  font-size: 1rem;
+  font-style: italic;
+  color: black;
+  font-weight: bold;
+}
+
+.closeMenu {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.closeMenu i{
+  font-size: 1.5rem;
+  cursor: pointer;
+  width: fit-content;
+  padding: 0.25rem;
+  border-radius: 0.1rem;
+}
+
+.closeMenu i:hover{
+  background-color: #f0f5fb;
+}
+
+.menuSocials {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.menuSocials a {
+  padding: 0;
+}
 
 /* ////////////// TOP CONTAINER ////////////// */
 .topContainer {
@@ -234,7 +290,7 @@ button {
   cursor: pointer;
 }
 
-/* ////////////// TOKENOMICS ////////////// */
+/* ////////////// ROADMAP ////////////// */
 .roadmap {
   display: flex;
   justify-content: center;
@@ -303,6 +359,107 @@ footer p {
   flex-direction: column;
   gap: 0.5rem;
 }
+
+
+
+
+
+/* ///////////////////// MEDIA RESPONSIVENESS ///////////////////// */
+
+@media (max-width:1000px) {
+  /* ////////////// ABOUT ////////////// */
+  .about, .tokenomicsDetails, .roadmap {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about h2, .about h4, .about p {
+    text-align: center;
+  }
+
+  /* ////////////// TOKENOMICS ////////////// */
+  .tokenomicsDetails img {
+    margin-top: 0;
+  }
+
+  .ticker {
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  .tokenSupply, .tokenSupplyFigure {
+    text-align: center;
+  }
+  
+  .tokenomicsText ul {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  /* ////////////// ROADMAP ////////////// */
+  .roadmap {
+    gap: 3rem;
+  }
+
+  .roadmap h2, .roadmap p {
+    text-align: center;
+  }
+
+  /* ////////////// FOOTER ////////////// */
+  .footerFlex {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    text-align: center;
+  }
+
+  .disclaimer p {
+    text-align: center;
+  }
+}
+
+@media (max-width:750px) {
+  h2 {
+    font-size: 3rem;
+  }
+
+  /* ////////////// NAVBAR ////////////// */
+  .navLinks, .socialsBtn {
+    display: none;
+  }
+
+  .navBtn {
+    display: block;
+  }
+
+  .mobileMenu.active {
+    left: 0;
+  }
+
+  .tokenSupplyFigure {
+    font-size: 3rem;
+  }
+
+
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* @media (prefers-reduced-motion: no-preference) {
