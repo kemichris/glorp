@@ -40,7 +40,7 @@ const toggleMenu = () => {
       </nav>
       <div className="mobileMenu" ref={mobileMenuRef}>
         <div className='closeMenu'>
-          <i class="fa-solid fa-xmark"></i>
+          <i class="fa-solid fa-xmark" onClick={toggleMenu}></i>
         </div>
         <a href="http://localhost:3000">Home</a>
         <a href="#about">About</a>
