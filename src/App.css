@@ -461,6 +461,11 @@ footer p {
   }
 
   /* ////////////// TOKENOMICS ////////////// */
+  .tokenomicsDetails img {
+    width: 18rem;
+    height: 18rem;
+  }
+
   .tokenSupplyFigure {
     font-size: 2rem;
   }
@@ -486,6 +491,11 @@ footer p {
   }
 
   /* ////////////// ROADMAP ////////////// */
+  .roadmap img {
+    width: 18rem;
+    height: 18rem;
+  }
+  
   .roadmap p {
     font-size: 1rem;
   }
