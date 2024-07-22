@@ -20,7 +20,7 @@ export const Topcontainer = () => {
 
     return (
         <div className='topContainer'>
-            <video id='video' loop={play} preload="auto" muted >
+            <video id='video' playsInline loop={play} preload="auto" muted >
                 <source src={topVideo} />
             </video>
         </div>
