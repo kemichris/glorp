@@ -296,8 +296,14 @@ button {
   justify-content: center;
   align-items: center;
   padding: 2rem;
+  gap: 2rem;
   background-color: #C86FFF;
   border-radius: 3rem 3rem 0 0;
+}
+
+.roadmap video {
+  width: 31rem;
+  height: 31rem;
 }
 
 .roadmap p {
@@ -491,7 +497,7 @@ footer p {
   }
 
   /* ////////////// ROADMAP ////////////// */
-  .roadmap img {
+  .roadmap video {
     width: 18rem;
     height: 18rem;
   }
