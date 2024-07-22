@@ -495,9 +495,13 @@ footer p {
     width: 18rem;
     height: 18rem;
   }
-  
+
   .roadmap p {
     font-size: 1rem;
+  }
+
+  .footer {
+    padding: 2rem 1.5rem;
   }
 }
 
