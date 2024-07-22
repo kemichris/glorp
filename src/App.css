@@ -1,11 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
 body {
   overflow-x: hidden;
   font-family: "Lato", sans-serif;
   background-color: #070029;
 }
-h1, h2, h3, h4, h5, h6, p {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0;
 }
 
@@ -21,7 +28,59 @@ button {
 }
 
 /* ////////////// LOADING ////////////// */
+.loading {
+  background-color: #070029;
+  display: flex;
+  justify-content: center;
+  top: 0;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  filter: opacity(0.9);
+  z-index: 2000;
+}
 
+.loadingCircle {
+  width: 7.5rem;
+  height: 7.5rem;
+  border: 0.5rem solid #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 0.5rem solid #000000; /* Blue color for the top border */
+  border-radius: 50%; /* Makes it circular */
+  animation: rotate 1s linear infinite; /* Rotates infinitely */
+}
+
+.loadingCircle img {
+  width: 5rem;
+  height: auto;
+  display: block;
+  animation: beep 1s infinite; /* Adjust the timing as needed */
+}
+
+
+@keyframes beep {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1.2);
+    /* Scales the image up */
+    opacity: 0.7;
+    /* Optionally, change the opacity */
+  }
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg); /* Complete a full circle */
+  }
+}
 
 /* ////////////// NAVBAR ////////////// */
 .navbar nav {
@@ -47,16 +106,19 @@ button {
   gap: 2rem;
 }
 
-.link, .navLinks a {
+.link,
+.navLinks a {
   text-decoration: none;
   font-size: 0.94rem;
   color: white;
   font-weight: bold;
   padding: 0.375rem 1rem;
-  transition: ease-in-out .5s;
+  transition: ease-in-out 0.5s;
 }
 
-.link:hover, .navLinks a:hover, .socialsBtn:hover {
+.link:hover,
+.navLinks a:hover,
+.socialsBtn:hover {
   background-color: white;
   border-radius: 3.125rem;
   color: #070029;
@@ -72,7 +134,7 @@ button {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  transition: ease-in-out .5s;
+  transition: ease-in-out 0.5s;
 }
 
 .socialDropdown {
@@ -81,7 +143,7 @@ button {
   background-color: #183153;
   padding: 1rem;
   width: auto;
-  right: 1rem ;
+  right: 1rem;
   top: 5.3rem;
   z-index: 1000;
   cursor: pointer;
@@ -97,14 +159,14 @@ button {
 }
 
 .navBtn {
-  color: #CCE1FE;
+  color: #cce1fe;
   font-size: 1.5rem;
   cursor: pointer;
   display: none;
 }
 
 .mobileMenu {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -114,7 +176,7 @@ button {
   top: 0;
   z-index: 3;
   left: -15rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, .3);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   transition: left 0.5s ease-in-out;
 }
 
@@ -133,7 +195,7 @@ button {
   justify-content: flex-end;
 }
 
-.closeMenu i{
+.closeMenu i {
   font-size: 1.5rem;
   cursor: pointer;
   width: fit-content;
@@ -141,7 +203,7 @@ button {
   border-radius: 0.1rem;
 }
 
-.closeMenu i:hover{
+.closeMenu i:hover {
   background-color: #f0f5fb;
 }
 
@@ -195,7 +257,7 @@ button {
 }
 
 .aboutImg {
-  background-color: #FFAAFD;
+  background-color: #ffaafd;
   border-radius: 2rem;
 }
 
@@ -204,7 +266,7 @@ button {
 }
 
 .about h4 {
-  color: #FFDA17;
+  color: #ffda17;
   font-size: 1.5rem;
   margin-bottom: 2rem;
 }
@@ -228,7 +290,7 @@ button {
 }
 
 .tokenomicsDetails {
-  background-color: #CCE1FE;
+  background-color: #cce1fe;
   border-radius: 2rem;
   padding: 2rem 1rem;
   display: flex;
@@ -245,9 +307,9 @@ button {
 }
 
 .ticker {
-  padding: 0.5rem 1rem ;
+  padding: 0.5rem 1rem;
   border-radius: 3rem;
-  background-color: #FF41C1;
+  background-color: #ff41c1;
   color: white;
   width: fit-content;
   font-size: 1.5rem;
@@ -256,17 +318,16 @@ button {
 }
 
 .tokenSupply {
-  color: #FF41C1;
+  color: #ff41c1;
   font-size: 1.2rem;
   font-weight: bold;
 }
 
 .tokenSupplyFigure {
   font-family: "Jua", sans-serif;
-  color: #FF41C1;
+  color: #ff41c1;
   font-size: 5.5rem;
 }
-
 
 .tokenomicsText ul li {
   font-size: 1.2rem;
@@ -300,7 +361,7 @@ button {
   align-items: center;
   padding: 2rem;
   gap: 2rem;
-  background-color: #C86FFF;
+  background-color: #c86fff;
   border-radius: 3rem 3rem 0 0;
 }
 
@@ -315,15 +376,14 @@ button {
 }
 
 /* ////////////// FOOTER ////////////// */
-.footer  {
-  background-color: #A1DDFF;
+.footer {
+  background-color: #a1ddff;
   padding: 2.5rem 3rem;
 }
 
 .footerFlex {
   display: flex;
   justify-content: space-between;
-
 }
 
 footer p {
@@ -342,10 +402,10 @@ footer p {
 }
 
 .quickLinks a {
-  text-decoration:  none;
+  text-decoration: none;
   font-size: 1rem;
   color: #070029;
-  transition: ease-in-out 0.5s ;
+  transition: ease-in-out 0.5s;
 }
 
 .quickLinks a:hover {
@@ -355,11 +415,11 @@ footer p {
 .disclaimer {
   padding-top: 1rem;
   margin-top: 1rem;
-  border-top: 1px solid #FF41C1;
+  border-top: 1px solid #ff41c1;
 }
 
 .disclaimer p {
-  color: #FF41C1;
+  color: #ff41c1;
   font-size: 1.2rem;
 }
 
@@ -369,20 +429,20 @@ footer p {
   gap: 0.5rem;
 }
 
-
-
-
-
 /* ///////////////////// MEDIA RESPONSIVENESS ///////////////////// */
 
-@media (max-width:1000px) {
+@media (max-width: 1000px) {
   /* ////////////// ABOUT ////////////// */
-  .about, .tokenomicsDetails, .roadmap {
+  .about,
+  .tokenomicsDetails,
+  .roadmap {
     flex-direction: column;
     align-items: center;
   }
 
-  .about h2, .about h4, .about p {
+  .about h2,
+  .about h4,
+  .about p {
     text-align: center;
   }
 
@@ -395,11 +455,12 @@ footer p {
     text-align: center;
     margin: 0 auto;
   }
-  
-  .tokenSupply, .tokenSupplyFigure {
+
+  .tokenSupply,
+  .tokenSupplyFigure {
     text-align: center;
   }
-  
+
   .tokenomicsText ul {
     text-align: left;
     display: flex;
@@ -412,7 +473,8 @@ footer p {
     gap: 3rem;
   }
 
-  .roadmap h2, .roadmap p {
+  .roadmap h2,
+  .roadmap p {
     text-align: center;
   }
 
@@ -429,13 +491,14 @@ footer p {
   }
 }
 
-@media (max-width:750px) {
+@media (max-width: 750px) {
   h2 {
     font-size: 3rem;
   }
 
   /* ////////////// NAVBAR ////////////// */
-  .navLinks, .socialsBtn {
+  .navLinks,
+  .socialsBtn {
     display: none;
   }
 
@@ -453,10 +516,10 @@ footer p {
   }
 }
 
-@media (max-width:650px) {
+@media (max-width: 650px) {
   /* ////////////// MARQUEE ////////////// */
   .marqueeContent p {
-    font-size: 1rem; 
+    font-size: 1rem;
   }
 
   /* ////////////// ABOUT ////////////// */
@@ -482,7 +545,7 @@ footer p {
   .tokenomics ul li {
     font-size: 1rem;
   }
-  
+
   .contractAddress {
     padding: 0.5rem 1rem;
     flex-direction: column;
@@ -513,33 +576,3 @@ footer p {
     padding: 2rem 1.5rem;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-} */
-
-/* @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
