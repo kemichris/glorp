@@ -2,7 +2,7 @@
 import './App.css';
 import { About } from './components/About';
 import { Footer } from './components/Footer';
-import { Loading } from './components/Loading';
+// import { Loading } from './components/Loading';
 import { MarqueeBox } from './components/MarqueeBox';
 import { Navbar } from './components/Navbar';
 import { Roadmap } from './components/Roadmap';
@@ -16,7 +16,7 @@ function App() {
         <Navbar />
       </header>
       <main>
-        <Loading />
+        {/* <Loading /> */}
         <Topcontainer />
         <MarqueeBox/>
         <About />
