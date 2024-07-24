@@ -17,7 +17,7 @@ export const Tokenomics = () => {
             <div className="tokenomicsText">
                 <p className='ticker'>$GLRP is Happy</p>
                 <p className='tokenSupply'>Token supply</p>
-                <h3 className='tokenSupplyFigure'>1000,000,000</h3>
+                <h3 className='tokenSupplyFigure'>100,000,000</h3>
                 <ul>
                     <li><strong>90</strong>% liquidity pool</li>
                     <li><strong>5</strong>% NFT Airdrop = 3.75% Coolman's Universe | 1.25% Babies</li>

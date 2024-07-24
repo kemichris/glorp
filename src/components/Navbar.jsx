@@ -26,7 +26,7 @@ const toggleMenu = () => {
           <Link className='link' to="/">Home</Link>
           <a href="#about">About</a>
           <a href="#tokenomics">Tokenomics</a>
-          <a href="#buy">How to buy</a>
+          {/* <a href="#buy">How to buy</a> */}
         </div>
         <button className='socialsBtn' onClick={toggleDropdown}>Socials <i class="fa-solid fa-caret-down"></i></button>
         {isOpen && (
@@ -48,7 +48,7 @@ const toggleMenu = () => {
         <a href="/">Home</a>
         <a href="#about">About</a>
         <a href="#tokenomics">Tokenomics</a>
-        <a href="#buy">How to buy</a>
+        {/* <a href="#buy">How to buy</a> */}
         <div className="menuSocials">
           <a href="https://x.com/GLRPonSol" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a>
         </div>
