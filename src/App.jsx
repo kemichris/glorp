@@ -10,7 +10,7 @@ import { Tokenomics } from "./components/Tokenomics";
 import { Topcontainer } from "./components/Topcontainer";
 
 function App() {
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     const handleLoad = () => {
