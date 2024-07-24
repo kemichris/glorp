@@ -20,10 +20,10 @@ export const Topcontainer = () => {
 
     return (
         <div className='topContainer'>
-            {/* <div className="topText">
+            <div className="topText">
                 <h1>Welcome to GlorpCoin</h1>
                 <p>May the cheese be with you</p>
-            </div> */}
+            </div>
             <video id='video' playsInline loop={play} preload="auto" muted >
                 <source src={topVideo} />
             </video>
