@@ -26,7 +26,7 @@ export const Topcontainer = () => {
         <div className='topContainer'>
             <div className="topText">
                 <h1>Welcome to GlorpCoin</h1>
-                <p>May the cheese be with you</p>
+                <p>May the cheese be with you</p>to
             </div>
             <video id='video' ref={videoRef} playsInline="true" loop={play} preload="auto" muted >
                 <source src={topVideo} />
