@@ -42,7 +42,7 @@ const toggleMenu = () => {
         <div className='closeMenu'>
           <i class="fa-solid fa-xmark" onClick={toggleMenu}></i>
         </div>
-        <a href="http://localhost:3000">Home</a>
+        <a href="/">Home</a>
         <a href="#about">About</a>
         <a href="#tokenomics">Tokenomics</a>
         <a href="#buy">How to buy</a>
