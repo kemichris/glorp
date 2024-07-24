@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 import { About } from "./components/About";
 import { Footer } from "./components/Footer";
@@ -10,36 +10,38 @@ import { Tokenomics } from "./components/Tokenomics";
 import { Topcontainer } from "./components/Topcontainer";
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
   useEffect(() => {
-    const loadingDiv = document.querySelector(".loading");
-    if (!loadingDiv) return;
-  
     const handleLoad = () => {
-      loadingDiv.style.display = "none";
+      setLoading(false);
     };
-  
     window.addEventListener("load", handleLoad);
-  
     return () => {
       window.removeEventListener("load", handleLoad);
     };
   }, []);
+
+
   return (
     <div className="App">
-      <header>
-        <Navbar />
-      </header>
-      <main>
-        <Loading />
-        <Topcontainer />
-        <MarqueeBox />
-        <About />
-        <Tokenomics />
-        <Roadmap />
-      </main>
-      <footer>
-        <Footer />
-      </footer>
+      {loading ? <Loading /> : (
+        <>
+          <header>
+            <Navbar />
+          </header>
+          <main>
+            <Topcontainer />
+            <MarqueeBox />
+            <About />
+            <Tokenomics />
+            <Roadmap />
+          </main>
+          <footer>
+            <Footer />
+          </footer>
+        </>
+      )}
     </div>
   );
 }
