@@ -1,5 +1,5 @@
 
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import './App.css';
 import { About } from './components/About';
 import { Footer } from './components/Footer';
@@ -12,41 +12,49 @@ import { Topcontainer } from './components/Topcontainer';
 
 function App() {
 
-  const [mediaLoaded, setMediaLoaded] = useState(false);
+  // const [mediaLoaded, setMediaLoaded] = useState(false);
 
   useEffect( ()=> {
-    const images = document.querySelectorAll("img");
-    const videos = document.querySelectorAll("video");
-    const totalMedia = images.length + videos.length;
+    // const images = document.querySelectorAll("img");
+    // const videos = document.querySelectorAll("video");
+    // const totalMedia = images.length + videos.length;
 
-    let loadedCount = 0;
+    const loadingDiv = document.querySelector(".loading");
 
-    images.forEach((img) => {
-      img.onload = () => {
-        loadedCount++;
-        if (loadedCount === totalMedia) {
-          setMediaLoaded(true);
-          
-        }
+    window.addEventListener("load", ()=> {
+      if (loadingDiv) {
+        loadingDiv.style.display ="none";
       }
-    })
+    } )
 
-    videos.forEach((video) => {
-      video.onload = () => {
-        loadedCount++;
-        if (loadedCount === totalMedia) {
-          setMediaLoaded(true);
+    // let loadedCount = 0;
+
+    // images.forEach((img) => {
+    //   img.onload = () => {
+    //     loadedCount++;
+    //     if (loadedCount === totalMedia) {
+    //       setMediaLoaded(true);
           
-        }
-      }
-    })
+    //     }
+    //   }
+    // })
 
-    if (!mediaLoaded) {
-      const loadingDiv = document.querySelector(".loading");
+    // videos.forEach((video) => {
+    //   video.onload = () => {
+    //     loadedCount++;
+    //     if (loadedCount === totalMedia) {
+    //       setMediaLoaded(true);
+          
+    //     }
+    //   }
+    // })
 
-      loadingDiv.style.display ="none";
+    // if (!mediaLoaded) {
       
-    }
+
+    //   loadingDiv.style.display ="none";
+      
+    // }
 
   })
   return (

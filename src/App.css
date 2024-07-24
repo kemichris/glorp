@@ -219,7 +219,21 @@ button {
 /* ////////////// TOP CONTAINER ////////////// */
 .topContainer {
   border-radius: 2rem;
-  margin: 7rem 1.5rem 2rem;
+  margin: 7rem 5rem 2rem;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+h1 {
+  color: #f0f5fb;
+  font-size: 5rem;
+  font-family: "Jua", sans-serif;
+}
+
+.topText p {
+  color: #ffda17;
+  font-size: 1.5rem;
 }
 
 .topContainer video {
