@@ -31,7 +31,10 @@ const toggleMenu = () => {
         <button className='socialsBtn' onClick={toggleDropdown}>Socials <i class="fa-solid fa-caret-down"></i></button>
         {isOpen && (
           <div className="socialDropdown">
-
+             <a href="https://x.com/GLRPonSol" target="_blank" rel="noopener noreferrer">
+             <i class="fa-brands fa-x-twitter"></i>
+               X (Twitter)
+             </a>
           </div>
 
         )}
