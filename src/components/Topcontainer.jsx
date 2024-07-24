@@ -5,18 +5,22 @@ export const Topcontainer = () => {
 
 
     const [play, setPlay] = useState(true);
+    const videoRef = React.createRef();
 
     useEffect(() => {
-        const video = document.getElementById("video");
+        const video = videoRef.current;
         video.play()
         video.addEventListener("ended", () => {
             setPlay(false);
-            setTimeout(() => {
+
+            const timeoutId = setTimeout(() => {
                 setPlay(true);
                 video.play();
             }, 500)
+
+            return () => clearTimeout(timeoutId);
         });
-    }, []);
+    }, [videoRef]);
 
     return (
         <div className='topContainer'>
@@ -24,7 +28,7 @@ export const Topcontainer = () => {
                 <h1>Welcome to GlorpCoin</h1>
                 <p>May the cheese be with you</p>
             </div>
-            <video id='video' playsInline loop={play} preload="auto" muted >
+            <video id='video' ref={videoRef} playsInline="true" loop={play} preload="auto" muted >
                 <source src={topVideo} />
             </video>
         </div>
