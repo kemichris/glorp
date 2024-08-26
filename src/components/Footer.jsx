@@ -24,7 +24,7 @@ export const Footer = () => {
         </div>
 
         <div className="disclaimer">
-          <p>$GLRP is a memecoin and with oustanding utility. Don't risk money you are afraid of losing. The price may go up or it may go down. We are not responsible for the price of the token.</p>
+          <p>$GLRP is a memecoin combined with fun utilities. This is not a financial scheme nor advice. Do not invest what you cannot afford to lose. We won’t be held responsible for any loss of fund.</p>
         </div>
     </div>
   )
