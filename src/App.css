@@ -308,16 +308,20 @@ h1 {
   border-radius: 2rem;
   padding: 2rem 1rem;
   display: flex;
-  align-items: flex-start;
+  flex-direction: column;
   gap: 3rem;
 }
 
 .tokenomicsDetails img {
-  margin-top: -12rem;
+  width: 100%;
+  height: auto;
 }
 
 .tokenomicsText {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .ticker {

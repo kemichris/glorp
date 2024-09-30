@@ -10,9 +10,9 @@ export const Footer = () => {
 
             <div className="quickLinks">
               <h3>Quick Links</h3>
-              <a href="https://x.com/GLRPonSol" target="_blank" rel="noopener noreferrer">X (Twitter)</a>
-              <a href="https://x.com/GLRPonSol" target="_blank" rel="noopener noreferrer">X (Twitter)</a>
-              <a href="https://x.com/GLRPonSol" target="_blank" rel="noopener noreferrer">X (Twitter)</a>
+              <a href="https://x.com/glorpthetoken" target="_blank" rel="noopener noreferrer">X (Twitter)</a>
+              <a href="https://x.com/glorpthetoken" target="_blank" rel="noopener noreferrer">X (Twitter)</a>
+              <a href="https://x.com/glorpthetoken" target="_blank" rel="noopener noreferrer">X (Twitter)</a>
             </div>
 
             <div className="contact">
